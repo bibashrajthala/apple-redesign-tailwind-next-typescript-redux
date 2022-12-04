@@ -1,0 +1,30 @@
+{
+  "root": true,
+  "api": {
+    "projectId": "28gsn3vf",
+    "dataset": "production"
+  },
+  "project": {
+    "name": "sanity-apple-redesign"
+  },
+  "plugins": [
+    "@sanity/base",
+    "@sanity/default-layout",
+    "@sanity/default-login",
+    "@sanity/desk-tool",
+    "barcode-input"
+  ],
+  "env": {
+    "development": {
+      "plugins": [
+        "@sanity/vision"
+      ]
+    }
+  },
+  "parts": [
+    {
+      "name": "part:@sanity/base/schema",
+      "path": "./schemas/schema"
+    }
+  ]
+}
